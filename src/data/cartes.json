@@ -1,0 +1,57 @@
+[
+  {
+    "id": "carte-1",
+    "image": "public/images /royaume.png",
+    "periode": "1600 - 1894",
+    "titre": "Le Royaume du Dahomey",
+    "descriptionCourte": "Le Royaume du Dahomey fut l'un des plus puissants royaumes d'Afrique de l'Ouest, connu pour ses Amazones et son organisation politique avancée.",
+    "descriptionLongue": "Le Royaume du Dahomey, fondé au XVIIe siècle, s'est imposé comme une puissance régionale majeure. Sa capitale, Abomey, était le centre d'un royaume structuré autour d'un pouvoir monarchique fort. Les Amazones du Dahomey, un corps d'élite féminin, ont marqué l'histoire militaire du continent. Le royaume a résisté à la colonisation jusqu'en 1894, date à laquelle il fut intégré à l'Afrique-Occidentale Française.",
+    "acteurPrincipal": "Roi Béhanzin",
+    "anchorYear": 1946
+  },
+  {
+    "id": "carte-2",
+    "image": "public/images /colonisation.png",
+    "periode": "1894 - 1958",
+    "titre": "La Colonisation Française",
+    "descriptionCourte": "Le Dahomey devient une colonie française, marquant une période de bouleversements politiques, économiques et culturels.",
+    "descriptionLongue": "La colonisation française du Dahomey a profondément transformé la société. L'administration coloniale a imposé de nouvelles structures politiques, économiques et éducatives. Les cultures de rente, notamment le palmier à huile, ont été développées au détriment des cultures vivrières. Cette période a également vu l'émergence d'une élite éduquée qui allait plus tard porter les revendications indépendantistes.",
+    "acteurPrincipal": "Administration coloniale française"
+  },
+  {
+    "id": "carte-3",
+    "image": "public/images /independance.png",
+    "periode": "1958 - 1er août 1960",
+    "titre": "La Marche vers l'Indépendance",
+    "descriptionCourte": "Le Dahomey obtient son autonomie interne en 1958 puis accède à l'indépendance totale le 1er août 1960.",
+    "descriptionLongue": "Le processus d'indépendance s'est accéléré avec la loi-cadre Defferre de 1956 qui accorde l'autonomie interne aux colonies. Le référendum de 1958 voit le Dahomey voter en faveur de la Communauté française tout en obtenant un statut autonome. Sous la direction d'Hubert Maga, le pays prépare son indépendance qui est proclamée le 1er août 1960, faisant du Dahomey l'un des premiers États indépendants d'Afrique de l'Ouest.",
+    "acteurPrincipal": "Hubert Maga (premier président)"
+  },
+  {
+    "id": "carte-4",
+    "image": "public/images /kerékou.png",
+    "periode": "1972 - 1990",
+    "titre": "La République Populaire du Bénin",
+    "descriptionCourte": "Le Bénin adopte le marxisme-léninisme sous Mathieu Kérékou, devenant la République Populaire du Bénin.",
+    "descriptionLongue": "Le 26 octobre 1972, Mathieu Kérékou prend le pouvoir par un coup d'État. Il instaure un régime marxiste-léniniste et rebaptise le pays République Populaire du Bénin en 1975. Cette période est marquée par des nationalisations, une centralisation du pouvoir et une rupture avec les anciennes puissances coloniales. Le régime, autoritaire, a duré jusqu'à la Conférence Nationale de 1990 qui a ouvert la voie au multipartisme et à la démocratie.",
+    "acteurPrincipal": "Mathieu Kérékou"
+  },
+  {
+    "id": "carte-5",
+    "image": "public/images /conference-nationale.png",
+    "periode": "1990 - 1991",
+    "titre": "La Conférence Nationale",
+    "descriptionCourte": "La Conférence Nationale de 1990 marque le tournant démocratique du Bénin et l'ouverture vers le multipartisme.",
+    "descriptionLongue": "La Conférence Nationale des Forces Vives de la Nation, organisée en février 1990, est un événement majeur dans l'histoire du Bénin. Elle rassemble toutes les forces politiques et sociales du pays pour une transition démocratique. Cette conférence met fin au régime marxiste-léniniste de Mathieu Kérékou et jette les bases d'une nouvelle constitution adoptée par référendum. Le Bénin devient ainsi l'un des premiers pays d'Afrique à opérer une transition démocratique pacifique.",
+    "acteurPrincipal": "Mgr Isidore de Souza (président de la Conférence)"
+  },
+  {
+    "id": "carte-6",
+    "image": "public/images /benin-moderne.png",
+    "periode": "1991 - 2026",
+    "titre": "L'Ère Démocratique Moderne",
+    "descriptionCourte": "Le Bénin s'affirme comme une démocratie stable en Afrique de l'Ouest, alternant les pouvoirs et se développant économiquement.",
+    "descriptionLongue": "Depuis 1991, le Bénin a connu plusieurs alternances politiques pacifiques, avec des présidents comme Nicéphore Soglo, Thomas Boni Yayi, et Patrice Talon. Le pays s'est distingué par sa stabilité démocratique dans une région souvent marquée par les crises politiques. Sur le plan économique, le Bénin a développé son port de Cotonou, son agriculture et plus récemment son secteur numérique. La célébration des 66 ans d'indépendance en 2026 est l'occasion de réfléchir sur le chemin parcouru et les défis à venir.",
+    "acteurPrincipal": "Peuple béninois"
+  }
+]

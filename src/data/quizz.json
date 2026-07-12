@@ -1,0 +1,127 @@
+[
+  {
+    "id": "q1",
+    "question": "En quelle année le Dahomey est-il devenu une colonie française ?",
+    "options": ["1884", "1894", "1904", "1914"],
+    "reponseCorrecte": 1
+  },
+  {
+    "id": "q2",
+    "question": "Qui a été le premier président du Dahomey indépendant ?",
+    "options": [
+      "Mathieu Kérékou",
+      "Hubert Maga",
+      "Nicéphore Soglo",
+      "Émile Zinsou"
+    ],
+    "reponseCorrecte": 1
+  },
+  {
+    "id": "q3",
+    "question": "Quelle est la date de l'indépendance du Bénin ?",
+    "options": [
+      "1er janvier 1960",
+      "1er août 1960",
+      "1er janvier 1961",
+      "1er août 1961"
+    ],
+    "reponseCorrecte": 1
+  },
+  {
+    "id": "q4",
+    "question": "Les Amazones du Dahomey étaient :",
+    "options": [
+      "Des guerrières d'élite",
+      "Des commerçantes",
+      "Des prêtresses",
+      "Des danseuses"
+    ],
+    "reponseCorrecte": 0
+  },
+  {
+    "id": "q5",
+    "question": "En quelle année Mathieu Kérékou a-t-il pris le pouvoir ?",
+    "options": ["1960", "1965", "1972", "1980"],
+    "reponseCorrecte": 2
+  },
+  {
+    "id": "q6",
+    "question": "Quel était le nom du Bénin avant 1975 ?",
+    "options": ["Dahomey", "Bénin", "Porto-Novo", "Abomey"],
+    "reponseCorrecte": 0
+  },
+  {
+    "id": "q7",
+    "question": "Quel événement majeur a eu lieu au Bénin en 1990 ?",
+    "options": [
+      "L'indépendance",
+      "La Conférence Nationale",
+      "Le coup d'État",
+      "La création de la CEDEAO"
+    ],
+    "reponseCorrecte": 1
+  },
+  {
+    "id": "q8",
+    "question": "Quelle est la capitale du Bénin ?",
+    "options": ["Cotonou", "Porto-Novo", "Abomey", "Ouidah"],
+    "reponseCorrecte": 1
+  },
+  {
+    "id": "q9",
+    "question": "Qui a succédé à Mathieu Kérékou à la tête du Bénin ?",
+    "options": [
+      "Nicéphore Soglo",
+      "Patrice Talon",
+      "Thomas Boni Yayi",
+      "Yayi Boni"
+    ],
+    "reponseCorrecte": 0
+  },
+  {
+    "id": "q10",
+    "question": "Quelle était la religion officielle du Royaume du Dahomey ?",
+    "options": ["Le christianisme", "L'islam", "Le vodun", "L'animisme"],
+    "reponseCorrecte": 2
+  },
+  {
+    "id": "q11",
+    "question": "Quel traité a officialisé la colonisation du Dahomey ?",
+    "options": [
+      "Traité de Berlin",
+      "Traité de Versailles",
+      "Traité de Paris",
+      "Traité de Tordesillas"
+    ],
+    "reponseCorrecte": 0
+  },
+  {
+    "id": "q12",
+    "question": "Qui étaient les 'Amazones' du Dahomey ?",
+    "options": ["Des soldates", "Des esclaves", "Des nobles", "Des marchandes"],
+    "reponseCorrecte": 0
+  },
+  {
+    "id": "q13",
+    "question": "Quel parti politique a dominé le Bénin après 1990 ?",
+    "options": ["PRPB", "UPD", "Révolutionnaire", "Social-démocrate"],
+    "reponseCorrecte": 1
+  },
+  {
+    "id": "q14",
+    "question": "Quelle langue est la plus parlée au Bénin ?",
+    "options": ["Français", "Fon", "Yoruba", "Anglais"],
+    "reponseCorrecte": 1
+  },
+  {
+    "id": "q15",
+    "question": "Quel monument emblématique se trouve à Ouidah ?",
+    "options": [
+      "La Porte du Non-Retour",
+      "La Pyramide",
+      "Le Palais",
+      "Le Musée"
+    ],
+    "reponseCorrecte": 0
+  }
+]
