@@ -54,7 +54,6 @@ export function Resultat({
   const cardRef = useRef<HTMLDivElement>(null);
   const shareRef = useRef<HTMLDivElement>(null);
 
-  // ✅ Utiliser useRef pour éviter les doubles soumissions
   const hasSubmitted = useRef(false);
 
   const pourcentageArrondi = Math.round(resultat.pourcentage);
@@ -62,7 +61,7 @@ export function Resultat({
   const sealName = getSealName(pourcentageArrondi);
   const reference = referenceCode(new Date());
 
-  // ✅ Soumission automatique vers Google Sheet (une seule fois)
+  // Soumission automatique vers Google Sheet (une seule fois)
   useEffect(() => {
     if (hasSubmitted.current) {
       console.log("⏭️ Score déjà soumis, on ignore");
@@ -85,7 +84,7 @@ export function Resultat({
     });
   }, [nom, telephone, resultat]);
 
-  // ✅ Partager le score
+  // Partager le score
   const handleShare = async () => {
     if (!shareRef.current || isSharing) return;
     setIsSharing(true);
@@ -215,69 +214,116 @@ export function Resultat({
       </div>
 
       {/* ————— Conteneur de partage (caché, pour la capture) ————— */}
-      <div ref={shareRef} className="fixed left-[9999px] top-0 w-100 bg-white">
+      <div
+        ref={shareRef}
+        className="fixed left-[9999px] top-0 w-125 bg-white rounded-2xl overflow-hidden shadow-2xl"
+      >
         {/* Liseré tricolore */}
-        <div className="h-1.5 flex">
+        <div className="h-2 flex">
           <div className="flex-1 bg-[#1B7A3D]" />
           <div className="flex-1 bg-[#FCD116]" />
           <div className="flex-1 bg-[#E8112D]" />
         </div>
 
-        <div className="px-6 py-8 bg-white">
-          {/* En-tête */}
-          <div className="flex items-start justify-between mb-6">
-            <span className="font-mono text-[10px] tracking-wider uppercase text-gray-400">
-              Bénin Tché
-            </span>
-            <span className="font-mono text-[10px] text-gray-400">
+        <div className="p-8 bg-white">
+          {/* En-tête avec logo et référence */}
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-[#1B7A3D]/10 flex items-center justify-center">
+                <span className="text-[#1B7A3D] font-serif text-lg font-bold">
+                  BT
+                </span>
+              </div>
+              <span className="font-serif text-xl font-semibold text-[#1B7A3D]">
+                Bénin Tché
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-gray-400 bg-gray-50 px-3 py-1 rounded-full">
               {reference}
             </span>
           </div>
 
-          {/* Tampon */}
-          <div className="flex justify-center mb-4">
-            <div className="w-16 h-16 rounded-full border-2 border-[#1B7A3D]/70 flex items-center justify-center -rotate-3 text-[#1B7A3D]">
-              {sealName === "trophy" && <Trophy className="w-7 h-7" />}
-              {sealName === "award" && <Award className="w-7 h-7" />}
-              {sealName === "book" && <BookOpen className="w-7 h-7" />}
+          {/* Grand tampon / sceau */}
+          <div className="flex justify-center mb-6">
+            <div className="w-24 h-24 rounded-full border-4 border-[#1B7A3D] flex items-center justify-center -rotate-3 bg-[#1B7A3D]/5">
+              {sealName === "trophy" && (
+                <Trophy className="w-12 h-12 text-[#1B7A3D]" />
+              )}
+              {sealName === "award" && (
+                <Award className="w-12 h-12 text-[#1B7A3D]" />
+              )}
+              {sealName === "book" && (
+                <BookOpen className="w-12 h-12 text-[#1B7A3D]" />
+              )}
               {sealName === "graduation" && (
-                <GraduationCap className="w-7 h-7" />
+                <GraduationCap className="w-12 h-12 text-[#1B7A3D]" />
               )}
             </div>
           </div>
 
-          {/* Score */}
-          <div className="text-center mb-1">
-            <span className="font-serif text-5xl font-semibold text-gray-900">
+          {/* Score géant */}
+          <div className="text-center mb-2">
+            <span className="font-serif text-8xl font-bold text-gray-900">
               {resultat.score}
             </span>
-            <span className="font-serif text-2xl text-gray-400">
+            <span className="font-serif text-4xl text-gray-400 ml-2">
               /{resultat.total}
             </span>
           </div>
-          <p className="text-center font-mono text-xs text-gray-400 mb-4">
-            {pourcentageArrondi}% de bonnes réponses
-          </p>
+          <div className="text-center">
+            <span className="inline-block bg-[#1B7A3D]/10 text-[#1B7A3D] font-mono text-sm px-4 py-1 rounded-full">
+              {pourcentageArrondi}% de bonnes réponses
+            </span>
+          </div>
 
-          {/* Titre + nom */}
-          <div className="text-center border-t border-dashed border-gray-200 pt-4">
-            <h3 className="font-serif text-lg font-semibold text-gray-900 mb-1">
+          {/* Séparateur */}
+          <div className="relative my-6">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-dashed border-gray-200" />
+            </div>
+            <div className="relative flex justify-center">
+              <span className="bg-white px-4 text-[10px] text-gray-400">✦</span>
+            </div>
+          </div>
+
+          {/* Titre + Nom */}
+          <div className="text-center">
+            <h3 className="font-serif text-3xl font-bold text-gray-900 mb-2">
               {titre}
             </h3>
-            <p className="font-mono text-xs text-gray-500 uppercase tracking-wide">
+            <p className="font-mono text-lg text-gray-500 uppercase tracking-widest">
               {nom}
             </p>
           </div>
+
+          {/* Badge 66 ans */}
+          <div className="mt-6 text-center">
+            <span className="inline-block bg-linear-to-r from-[#1B7A3D] via-[#FCD116] to-[#E8112D] text-white font-serif text-sm px-6 py-2 rounded-full">
+              66 ans d'indépendance · 1er août 2026
+            </span>
+          </div>
         </div>
 
-        {/* Pied */}
-        <div className="flex items-center justify-between px-6 py-3 border-t border-[#E3E6DE] bg-[#F4F5F0]">
-          <span className="font-serif text-sm font-semibold text-[#1B7A3D]">
-            Bénin Tché
-          </span>
-          <span className="font-mono text-[10px] text-gray-400">
-            66 ans d'indépendance
-          </span>
+        {/* Pied de carte */}
+        <div className="flex items-center justify-between px-8 py-4 bg-[#F4F5F0] border-t border-[#E3E6DE]">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-full bg-[#1B7A3D] flex items-center justify-center">
+              <span className="text-white font-serif text-xs font-bold">
+                BT
+              </span>
+            </div>
+            <span className="font-serif text-sm font-semibold text-[#1B7A3D]">
+              Bénin Tché
+            </span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="font-mono text-[10px] text-gray-400">
+              #66ansBenin
+            </span>
+            <span className="font-mono text-[10px] text-gray-400">
+              #BéninTché
+            </span>
+          </div>
         </div>
       </div>
 

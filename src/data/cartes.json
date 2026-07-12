@@ -1,7 +1,7 @@
 [
   {
     "id": "carte-1",
-    "image": "public/images /royaume.png",
+    "image": "/public/images /royaume.png",
     "periode": "1600 - 1894",
     "titre": "Le Royaume du Dahomey",
     "descriptionCourte": "Le Royaume du Dahomey fut l'un des plus puissants royaumes d'Afrique de l'Ouest, connu pour ses Amazones et son organisation politique avancée.",
@@ -11,7 +11,7 @@
   },
   {
     "id": "carte-2",
-    "image": "public/images /colonisation.png",
+    "image": "/public/images /colonisation.png",
     "periode": "1894 - 1958",
     "titre": "La Colonisation Française",
     "descriptionCourte": "Le Dahomey devient une colonie française, marquant une période de bouleversements politiques, économiques et culturels.",
@@ -20,7 +20,7 @@
   },
   {
     "id": "carte-3",
-    "image": "public/images /independance.png",
+    "image": "/public/images /independance.png",
     "periode": "1958 - 1er août 1960",
     "titre": "La Marche vers l'Indépendance",
     "descriptionCourte": "Le Dahomey obtient son autonomie interne en 1958 puis accède à l'indépendance totale le 1er août 1960.",
@@ -29,7 +29,7 @@
   },
   {
     "id": "carte-4",
-    "image": "public/images /kerékou.png",
+    "image": "/public/images /kerékou.png",
     "periode": "1972 - 1990",
     "titre": "La République Populaire du Bénin",
     "descriptionCourte": "Le Bénin adopte le marxisme-léninisme sous Mathieu Kérékou, devenant la République Populaire du Bénin.",
@@ -38,7 +38,7 @@
   },
   {
     "id": "carte-5",
-    "image": "public/images /conference-nationale.png",
+    "image": "/public/images /conference-nationale.png",
     "periode": "1990 - 1991",
     "titre": "La Conférence Nationale",
     "descriptionCourte": "La Conférence Nationale de 1990 marque le tournant démocratique du Bénin et l'ouverture vers le multipartisme.",
@@ -47,7 +47,7 @@
   },
   {
     "id": "carte-6",
-    "image": "public/images /benin-moderne.png",
+    "image": "/public/images /benin-moderne.png",
     "periode": "1991 - 2026",
     "titre": "L'Ère Démocratique Moderne",
     "descriptionCourte": "Le Bénin s'affirme comme une démocratie stable en Afrique de l'Ouest, alternant les pouvoirs et se développant économiquement.",

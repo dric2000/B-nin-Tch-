@@ -168,15 +168,19 @@ export function Carte({
       </article>
 
       {/* ————— Conteneur de partage (caché, pour la capture) ————— */}
-      <div ref={shareRef} className="fixed left-[9999px] top-0 w-100 bg-white">
+      <div
+        ref={shareRef}
+        className="fixed left-[9999px] top-0 w-125 bg-white rounded-2xl overflow-hidden shadow-2xl"
+      >
         {/* Liseré tricolore */}
-        <div className="h-1.5 flex">
+        <div className="h-2 flex">
           <div className="flex-1 bg-[#1B7A3D]" />
           <div className="flex-1 bg-[#FCD116]" />
           <div className="flex-1 bg-[#E8112D]" />
         </div>
 
-        <div className="relative h-56 overflow-hidden bg-white">
+        {/* Image de la carte */}
+        <div className="relative h-64 overflow-hidden">
           {carte.image && (
             <img
               src={carte.image}
@@ -184,25 +188,26 @@ export function Carte({
               className="w-full h-full object-cover"
             />
           )}
-          <div className="absolute inset-0 bg-linear-to-b from-black/0 via-black/10 to-black/75" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
 
-          <span className="absolute top-4 left-4 font-mono text-xs text-white border border-white/70 rounded-sm px-2.5 py-1 -rotate-2 bg-black/25">
+          {/* Badge période */}
+          <span className="absolute top-4 left-4 font-mono text-xs text-white bg-black/40 backdrop-blur-sm border border-white/30 rounded-lg px-3 py-1.5">
             {carte.periode}
           </span>
-
-          <h3 className="absolute bottom-4 left-5 right-5 font-serif text-xl font-semibold text-white leading-tight">
-            {carte.titre}
-          </h3>
         </div>
 
-        <div className="p-5 bg-white">
-          <p className="text-gray-700 text-sm leading-relaxed mb-3">
+        {/* Contenu */}
+        <div className="p-6 bg-white">
+          <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">
+            {carte.titre}
+          </h3>
+          <p className="text-gray-600 text-sm leading-relaxed mb-3">
             {carte.descriptionCourte}
           </p>
 
           {carte.acteurPrincipal && (
             <div className="flex items-center gap-2 text-sm text-gray-500 border-t border-gray-100 pt-3">
-              <User className="w-4 h-4 shrink-0 text-green-500" />
+              <User className="w-4 h-4 shrink-0 text-[#1B7A3D]" />
               <span className="font-medium text-gray-700">
                 {carte.acteurPrincipal}
               </span>
@@ -210,7 +215,8 @@ export function Carte({
           )}
         </div>
 
-        <div className="flex items-center justify-between px-5 py-3 border-t border-gray-100 bg-gray-50">
+        {/* Pied */}
+        <div className="flex items-center justify-between px-6 py-3 bg-[#F4F5F0] border-t border-[#E3E6DE]">
           <span className="font-serif text-sm font-semibold text-[#1B7A3D]">
             Bénin Tché
           </span>
